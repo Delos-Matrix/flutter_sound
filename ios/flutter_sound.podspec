@@ -19,7 +19,6 @@ Flutter plugin that relates to sound like audio and recorder.
 
   s.ios.deployment_target = '12.0'
   s.static_framework = true
-  # Note: Using branch instead of version for active development
-  # s.dependency 'flutter_sound_core', '9.28.0-fix-race-condition'
-  s.dependency 'flutter_sound_core', :git => 'https://github.com/Delos-Matrix/flutter_sound_core.git', :branch => 'fix-race-condition-9.28.0'
+  # Note: Override in Podfile to use: :git => 'https://github.com/Delos-Matrix/flutter_sound_core.git', :branch => 'fix-race-condition-9.28.0'
+  s.dependency 'flutter_sound_core', '9.28.0-fix-race-condition'
 end
