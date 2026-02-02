@@ -21,4 +21,9 @@ Flutter plugin that relates to sound like audio and recorder.
   s.static_framework = true
   # Note: Override in Podfile to use: :git => 'https://github.com/Delos-Matrix/flutter_sound_core.git', :branch => 'fix-race-condition-9.28.0'
   s.dependency 'flutter_sound_core', '9.28.0-fix-race-condition'
+
+  # Fix for modular headers compatibility
+  s.pod_target_xcconfig = {
+    'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
+  }
 end
