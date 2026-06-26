@@ -29,16 +29,16 @@ dependencies:
   flutter_sound_platform_interface:
     git:
       url: https://github.com/Delos-Matrix/flutter_sound_platform_interface.git
-      ref: delos/9.30.0
+      ref: v9.30.0-delos.1
 #    path: ../flutter_sound_platform_interface # Flutter Sound Dir
 
   # Forked too: vanilla web pulls platform_interface from hosted, which conflicts
   # with our git source. The web fork redirects it to git so pub unifies on one
-  # source. TEST stage: branch ref.
+  # source.
   flutter_sound_web:
     git:
       url: https://github.com/Delos-Matrix/flutter_sound_web.git
-      ref: delos/9.30.0
+      ref: v9.30.0-delos.1
 #    path: ../flutter_sound_web # Flutter Sound Dir
 
 ##  etau: ^0.0.14-alpha.5
