@@ -23,7 +23,13 @@ dependencies:
   synchronized: ^3.1.0
   logger: ^2.0.2
 # ============================================================================
-  flutter_sound_platform_interface: 9.30.0
+  # Redirect to the 9.30.0-based fork carrying the #1206 log-handler null guard
+  # (upstream never fixed it, not even in latest 10.3.8). This propagates the fix
+  # transitively to consumers (stt_labeler, argus) with no dependency_overrides.
+  flutter_sound_platform_interface:
+    git:
+      url: https://github.com/Delos-Matrix/flutter_sound_platform_interface.git
+      ref: v9.30.0-fix-log-nullcheck
 #    path: ../flutter_sound_platform_interface # Flutter Sound Dir
 
   flutter_sound_web: 9.30.0
