@@ -29,7 +29,7 @@ dependencies:
   flutter_sound_platform_interface:
     git:
       url: https://github.com/Delos-Matrix/flutter_sound_platform_interface.git
-      ref: v9.30.0-delos.1
+      ref: delos/9.30.0
 #    path: ../flutter_sound_platform_interface # Flutter Sound Dir
 
   flutter_sound_web: 9.30.0
